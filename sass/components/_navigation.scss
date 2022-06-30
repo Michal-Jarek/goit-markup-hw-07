@@ -1,10 +1,10 @@
 /* ---------- Navigation section --------- */
-.navigation .links-item .active {
+.navigation .links__item .active {
   color: var(--main-color);
   display: block;
   position: relative;
 }
-.navigation .links-item .active::after {
+.navigation .links__item .active::after {
   content: "";
   height: 4px;
   width: 100%;

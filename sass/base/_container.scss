@@ -7,22 +7,15 @@
 }
 /* =========================== kontenery ============================= */
 
-.navigation .links {
+.links {
   display: flex;
   align-items: center;
-}
-header .container {
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
-.header-class {
-  border-bottom: 1px solid #ececec;
 }
 
 .links .logo {
   margin-right: 93px;
 }
-.links .links-item:not(:last-child) {
+.links__item:not(:last-child) {
   margin-right: 46px;
 }
 .order .container {

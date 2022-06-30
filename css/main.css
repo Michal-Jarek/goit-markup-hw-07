@@ -94,25 +94,16 @@ img {
 }
 
 /* =========================== kontenery ============================= */
-.navigation .links {
+.links {
   display: flex;
   align-items: center;
-}
-
-header .container {
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
-
-.header-class {
-  border-bottom: 1px solid #ececec;
 }
 
 .links .logo {
   margin-right: 93px;
 }
 
-.links .links-item:not(:last-child) {
+.links__item:not(:last-child) {
   margin-right: 46px;
 }
 
@@ -471,13 +462,13 @@ header .container {
 }
 
 /* ---------- Navigation section --------- */
-.navigation .links-item .active {
+.navigation .links__item .active {
   color: var(--main-color);
   display: block;
   position: relative;
 }
 
-.navigation .links-item .active::after {
+.navigation .links__item .active::after {
   content: "";
   height: 4px;
   width: 100%;
@@ -490,6 +481,12 @@ header .container {
 
 /* ---------- Navigation section end------ */
 /* ===================== Header ============ */
+.page-header {
+  border-bottom: 1px solid #ececec;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
 .header-adress {
   margin-left: auto;
   display: flex;
