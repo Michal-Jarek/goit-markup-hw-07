@@ -1,0 +1,22 @@
+/* section description */
+.description {
+  font-size: 14px;
+}
+.description dt {
+  font-weight: 700;
+  line-height: var(--line-height-small);
+}
+.description dd {
+  line-height: var(--line-height-big);
+  color: var(--nav-second-color);
+  letter-spacing: 0.03em;
+}
+.description .icon-container {
+  background-color: var(--team-bg-color);
+  text-align: center;
+  padding: 25px 0;
+  margin-bottom: 30px;
+}
+.description {
+  padding-bottom: 0;
+}

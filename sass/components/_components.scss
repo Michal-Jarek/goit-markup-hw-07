@@ -1,0 +1,97 @@
+
+/*                                             links styling                               */
+/* logo */
+.navigation .links .logo,
+.foot .logo,
+.navigation .links .logo:visited {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.174;
+  text-decoration: none;
+}
+.logo .first {
+  color: var(--main-color);
+}
+.navigation .logo .second {
+  color: var(--logo-dark-color);
+}
+.foot .logo .second {
+  color: var(--logo-white-color);
+}
+/*                                  links                          */
+/* main and head */
+
+.links a {
+  text-decoration: none;
+  color: var(--main-txt-color);
+  font-size: 14px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.navigation .links {
+  line-height: var(--line-height-small);
+  font-weight: 500;
+}
+.links .contact {
+  color: var(--nav-second-color);
+}
+
+/* footer */
+.foot .links {
+  line-height: var(--line-height-big);
+}
+.foot .destination {
+  text-decoration: none;
+  color: var(--logo-white-color);
+}
+
+.foot .contact {
+  color: var(--footer-links-color);
+}
+/* Hover and Focus*/
+.links a:hover,
+.links a:focus {
+  color: var(--main-color);
+  outline: none;
+}
+
+/*                                       Background colors                                  */
+
+.navigation {
+  background-color: var(--logo-white-color);
+}
+.order,
+.foot {
+  background-color: var(--dark-motive);
+}
+.team {
+  background-color: var(--team-bg-color);
+}
+.order {
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/studio/background.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+/*                                        Fonts                                           */
+/* H1 */
+.order h1 {
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.364;
+  color: var(--logo-white-color);
+  letter-spacing: 0.06em;
+}
+.foot h3 {
+  color: var(--logo-white-color);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-align: left;
+  text-transform: uppercase;
+}

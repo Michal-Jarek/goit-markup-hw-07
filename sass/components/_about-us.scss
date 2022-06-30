@@ -1,0 +1,38 @@
+/* aboout us */
+.about-us h2,
+.team h2,
+.customers h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: var(--line-height-small);
+}
+.about-us-list {
+  width: inherit;
+  padding: inherit;
+}
+/* team */
+.team figcaption {
+  line-height: var(--line-height-small);
+  color: var(--nav-second-color);
+}
+.team strong {
+  font-weight: 500;
+  color: var(--main-txt-color);
+}
+.team figcaption a {
+  display: block;
+}
+.team .team-list > li {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+/* References-list*/
+.references-list p {
+  line-height: 1.875;
+  color: var(--nav-second-color);
+}
+.references-list strong {
+  line-height: 2;
+  font-size: 18px;
+}
+

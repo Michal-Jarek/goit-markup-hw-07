@@ -1,0 +1,38 @@
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+/* =========================== kontenery ============================= */
+
+.navigation .links {
+  display: flex;
+  align-items: center;
+}
+header .container {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.header-class {
+  border-bottom: 1px solid #ececec;
+}
+
+.links .logo {
+  margin-right: 93px;
+}
+.links .links-item:not(:last-child) {
+  margin-right: 46px;
+}
+.order .container {
+  flex-direction: column;
+  text-align: center;
+}
+.order h1 {
+  margin-bottom: 30px;
+  width: 696px;
+}
+.order {
+  padding: 200px 0;
+}

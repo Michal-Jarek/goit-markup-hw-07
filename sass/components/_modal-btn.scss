@@ -1,0 +1,30 @@
+/* ========================= MODAL BUTTON ================== */
+.modal {
+  width: 528px;
+  min-height: 581px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 1);
+  margin: auto;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  padding: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  right: 8px;
+  top: 8px;
+  cursor: pointer;
+  display: flex;
+}
+.close-btn svg {
+  fill: black;
+  text-align: center;
+  width: 18px;
+  height: 18px;
+  margin: auto;
+}
