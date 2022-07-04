@@ -45,9 +45,11 @@ p {
 img {
   display: block;
 }
-.list {
+%lists {
   list-style: none;
 }
-.link {
+%links{
   text-decoration: none;
+  color: currentColor;
+  cursor: pointer;
 }
