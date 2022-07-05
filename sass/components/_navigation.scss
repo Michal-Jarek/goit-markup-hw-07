@@ -2,8 +2,7 @@
 .menu {
   display: flex;
   align-items: center;
-  
-  &__item{
+  &__item{ 
     @extend %lists;
     &:first-of-type{
       margin-right:93px;
@@ -28,13 +27,14 @@
   }
   &__link{
     @extend %links;
-    font-weight: 500;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 500;  
+    outline: none; 
     line-height: var(--line-height-small);
     &:hover,
     &:focus{
       color: var(--main-color);  
-    }
-    
+    } 
   }
 }
 /* ---------- Navigation section end------ */
