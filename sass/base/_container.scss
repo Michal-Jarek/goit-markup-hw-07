@@ -6,7 +6,7 @@
   margin: 0 auto;
 }
 /* =========================== kontenery ============================= */
-
+/* Do Usunięcia */
 .links {
   display: flex;
   align-items: center;
@@ -18,6 +18,8 @@
 .links__item:not(:last-child) {
   margin-right: 46px;
 }
+/* dotąd */
+
 .order .container {
   flex-direction: column;
   text-align: center;

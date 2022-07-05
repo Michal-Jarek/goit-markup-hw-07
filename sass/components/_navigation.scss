@@ -1,37 +1,40 @@
 /* ---------- Navigation section --------- */
-
-
 .menu {
   display: flex;
   align-items: center;
   
   &__item{
     @extend %lists;
-      &:not(:last-child){
-          margin-right: 46px;
-      }
-  }
-  &__logo{
+    &:first-of-type{
       margin-right:93px;
+    }
+    &:not(:last-of-type, :first-of-type){
+       margin-right: 46px;
+    }
+      &--active{
+       color: var(--main-color);
+       position: relative;
+    }
+    &--active::after{
+      content: "";
+      height: 4px;
+      width: 100%;
+      background-color: var(--main-color);
+      display: block;
+      position: absolute;
+      bottom: -31px;
+      border-radius: 2px;
+    }
   }
   &__link{
     @extend %links;
+    font-weight: 500;
+    line-height: var(--line-height-small);
+    &:hover,
+    &:focus{
+      color: var(--main-color);  
+    }
     
   }
-}
-.navigation .links__item .active {
-  color: var(--main-color);
-  display: block;
-  position: relative;
-}
-.navigation .links__item .active::after {
-  content: "";
-  height: 4px;
-  width: 100%;
-  background-color: var(--main-color);
-  display: block;
-  position: absolute;
-  bottom: -33px;
-  border-radius: 2px;
 }
 /* ---------- Navigation section end------ */

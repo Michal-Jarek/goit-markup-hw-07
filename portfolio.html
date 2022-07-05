@@ -18,37 +18,39 @@
     <title>Zadanie domowe #7- portfolio</title>
   </head>
   <body>
-    <header class="header-class">
-      <div class="container">
+   <header class="page-header">
+      <div class="container page-header__container">
         <nav class="navigation">
-          <ul class="links list">
-            <li>
-              <a class="logo" href="index.html"
-                ><span class="first">Web</span
-                ><span class="second">Studio</span></a
-              >
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="logo menu__logo" href="index.html">Web<span class="logo__second--white-theme">Studio</span>
+              </a>
             </li>
-            <li class="links-item"><a href="index.html">Agencja</a></li>
-            <li class="links-item">
-              <a class="active" href="portfolio.html">Portfolio</a>
+            <li class="menu__item">
+              <a class="menu__link" href="index.html">Agencja</a>
             </li>
-            <li class="links-item"><a href="#">Kontakt</a></li>
+            <li class="menu__item menu__item--active">
+              <a class="menu__link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Kontakt</a>
+            </li>
           </ul>
         </nav>
-        <div class="links header-adress">
-          <a class="contact" href="mailto:info@devstudio.com">
-            <svg class="icon" width="16" height="12">
+        <ul class="header-adress">
+          <li class="header-adress__item">
+           <a class="header-adress__link" href="mailto:info@devstudio.com">
+            <svg class="header-adress__icon" width="16" height="12">
               <use href="images/svg-icons/icons.svg#icon-envelope"></use>
-            </svg>
-            info@devstudio.com
-          </a>
-          <a class="contact" href="tel:+48111111111">
-            <svg class="icon" width="10" height="16">
+            </svg>info@devstudio.com</a>
+          </li>
+          <li class="header-adress__item">
+          <a class="header-adress__link" href="tel:+48111111111">
+            <svg class="header-adress__icon" width="10" height="16">
               <use href="images/svg-icons/icons.svg#icon-smartphone"></use>
-            </svg>
-            +48 111 111 111
-          </a>
-        </div>
+            </svg>+48 111 111 111</a>
+          </li>
+        </ul>
       </div>
     </header>
     <main>
