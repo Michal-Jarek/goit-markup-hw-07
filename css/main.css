@@ -88,6 +88,10 @@ img {
   font-size: 14px;
 }
 
+.section-order {
+  padding: 94px 0;
+}
+
 .container {
   width: 1200px;
   padding: 0 15px;
@@ -97,39 +101,6 @@ img {
 }
 
 /* =========================== kontenery ============================= */
-/* Do Usunięcia */
-.links {
-  display: flex;
-  align-items: center;
-}
-
-.links .logo {
-  margin-right: 93px;
-}
-
-.links__item:not(:last-child) {
-  margin-right: 46px;
-}
-
-/* dotąd */
-.order .container {
-  flex-direction: column;
-  text-align: center;
-}
-
-.order h1 {
-  margin-bottom: 30px;
-  width: 696px;
-}
-
-.order {
-  padding: 200px 0;
-}
-
-.section {
-  padding: 94px 0;
-}
-
 .backdrop {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.2);
@@ -169,28 +140,27 @@ img {
   outline: none;
 }
 
-.order .buttons,
-.long-form-button {
+.buttons-xl {
   background-color: var(--main-color);
   color: var(--logo-white-color);
+  fill: var(--logo-white-color);
   font-weight: 700;
   line-height: 1.875;
-  width: 200px;
-  border-radius: 4px;
+  min-width: 200px;
   border: 0;
+  border-radius: 4px;
   padding: 10px 41px;
   letter-spacing: 0.06em;
   cursor: pointer;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.order button:hover,
-.newsletter .buttons:hover {
+.buttons-xl:hover, .buttons-xl:focus {
   background-color: var(--buttons-first-color);
   color: var(--main-txt-color);
   fill: rgb(0, 0, 0);
 }
 
+/* zmiana koloru poniżej jest do przycisku w formularzu */
 .long-form-button:hover {
   background-color: rgba(33, 150, 243, 0.4);
   color: var(--main-txt-color);
@@ -354,8 +324,6 @@ img {
   color: var(--logo-white-color);
 }
 
-/*                                             links styling                               */
-/* logo */
 /*                                  links                          */
 /* main and head */
 .links a {
@@ -374,20 +342,6 @@ img {
   color: var(--nav-second-color);
 }
 
-/* footer */
-.foot .links {
-  line-height: var(--line-height-big);
-}
-
-.foot .destination {
-  text-decoration: none;
-  color: var(--logo-white-color);
-}
-
-.foot .contact {
-  color: var(--footer-links-color);
-}
-
 /* Hover and Focus*/
 .links a:hover,
 .links a:focus {
@@ -396,40 +350,8 @@ img {
 }
 
 /*                                       Background colors                                  */
-.order,
-.foot {
-  background-color: var(--dark-motive);
-}
-
 .team {
   background-color: var(--team-bg-color);
-}
-
-.order {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/studio/background.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-
-/*                                        Fonts                                           */
-/* H1 */
-.order h1 {
-  font-size: 44px;
-  font-weight: 900;
-  line-height: 1.364;
-  color: var(--logo-white-color);
-  letter-spacing: 0.06em;
-}
-
-.foot h3 {
-  color: var(--logo-white-color);
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.143;
-  letter-spacing: 0.03em;
-  text-align: left;
-  text-transform: uppercase;
 }
 
 /* ======================= Short Contact ================= */
@@ -564,26 +486,11 @@ img {
   right: 28px;
 }
 .newsletter__button {
-  background-color: var(--main-color);
   position: relative;
-  border-radius: 4px;
-  border: 0;
-  width: 200px;
-  height: 50px;
   bottom: -36px;
-  font-weight: 700;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
+  height: 50px;
   text-align: left;
   padding: 0 0 0 42px;
-  color: rgb(255, 255, 255);
-  fill: rgb(255, 255, 255);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.newsletter__button:hover, .newsletter__button:focus {
-  background-color: var(--buttons-first-color);
-  color: var(--main-txt-color);
-  fill: rgb(0, 0, 0);
 }
 
 /*====================== END NEWSLETTER ==============*/
@@ -918,4 +825,26 @@ img {
   color: var(--main-color);
   text-decoration: underline;
   cursor: pointer;
+}
+
+.section-order {
+  padding: 200px 0;
+  background-color: var(--dark-motive);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/studio/background.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.section-order__header {
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.364;
+  color: var(--logo-white-color);
+  letter-spacing: 0.06em;
+  margin-bottom: 30px;
+  width: 696px;
+}
+.section-order__container {
+  flex-direction: column;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

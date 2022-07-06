@@ -1,7 +1,4 @@
 
-/*                                             links styling                               */
-/* logo */
-
 /*                                  links                          */
 /* main and head */
 
@@ -20,18 +17,6 @@
   color: var(--nav-second-color);
 }
 
-/* footer */
-.foot .links {
-  line-height: var(--line-height-big);
-}
-.foot .destination {
-  text-decoration: none;
-  color: var(--logo-white-color);
-}
-
-.foot .contact {
-  color: var(--footer-links-color);
-}
 /* Hover and Focus*/
 .links a:hover,
 .links a:focus {
@@ -42,41 +27,12 @@
 /*                                       Background colors                                  */
 
 
-.order,
-.foot {
-  background-color: var(--dark-motive);
-}
+
 .team {
   background-color: var(--team-bg-color);
 }
-.order {
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../images/studio/background.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-/*                                        Fonts                                           */
-/* H1 */
-.order h1 {
-  font-size: 44px;
-  font-weight: 900;
-  line-height: 1.364;
-  color: var(--logo-white-color);
-  letter-spacing: 0.06em;
-}
-.foot h3 {
-  color: var(--logo-white-color);
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.143;
-  letter-spacing: 0.03em;
-  text-align: left;
-  text-transform: uppercase;
-}
+
+
 
 
 /* ======================= Short Contact ================= */

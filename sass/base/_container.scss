@@ -6,28 +6,4 @@
   margin: 0 auto;
 }
 /* =========================== kontenery ============================= */
-/* Do Usunięcia */
-.links {
-  display: flex;
-  align-items: center;
-}
 
-.links .logo {
-  margin-right: 93px;
-}
-.links__item:not(:last-child) {
-  margin-right: 46px;
-}
-/* dotąd */
-
-.order .container {
-  flex-direction: column;
-  text-align: center;
-}
-.order h1 {
-  margin-bottom: 30px;
-  width: 696px;
-}
-.order {
-  padding: 200px 0;
-}
