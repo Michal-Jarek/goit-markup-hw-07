@@ -77,7 +77,7 @@ img {
   display: block;
 }
 
-.menu__item, .company-adress__list, .short-adress {
+.list-description__second-list, .list-description, .menu__item, .company-adress__list, .short-adress {
   list-style: none;
 }
 
@@ -88,10 +88,11 @@ img {
   font-size: 14px;
 }
 
-.section-order {
+.section-order, .section-description {
   padding: 94px 0;
 }
 
+/* ====================== Main Container ===================== */
 .container {
   width: 1200px;
   padding: 0 15px;
@@ -100,7 +101,7 @@ img {
   margin: 0 auto;
 }
 
-/* =========================== kontenery ============================= */
+/* ============= END Main Container ============ */
 .backdrop {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.2);
@@ -120,7 +121,7 @@ img {
   pointer-events: none;
 }
 
-/* Buttons styling */
+/* ======================== Buttons styling ============================= */
 .buttons {
   background-color: var(--buttons-first-color);
   font-family: "Roboto", sans-serif;
@@ -166,6 +167,7 @@ img {
   color: var(--main-txt-color);
 }
 
+/* ================= END Buttons styling ================ */
 /* ========================= MODAL BUTTON ================== */
 .modal {
   width: 528px;
@@ -238,33 +240,6 @@ img {
 }
 
 /* ==================== END SOCIAL Links ======== */
-/* section description */
-.description {
-  font-size: 14px;
-}
-
-.description dt {
-  font-weight: 700;
-  line-height: var(--line-height-small);
-}
-
-.description dd {
-  line-height: var(--line-height-big);
-  color: var(--nav-second-color);
-  letter-spacing: 0.03em;
-}
-
-.description .icon-container {
-  background-color: var(--team-bg-color);
-  text-align: center;
-  padding: 25px 0;
-  margin-bottom: 30px;
-}
-
-.description {
-  padding-bottom: 0;
-}
-
 /* aboout us */
 .about-us h2,
 .team h2,
@@ -539,47 +514,43 @@ img {
 }
 
 /* ====== END ======= */
-/* ========= Description container ======= */
-.description .container dl {
+/* ========================= Section Description ====================== */
+.list-description {
   display: flex;
-  justify-content: space-between;
   width: inherit;
+  justify-content: space-between;
 }
-
-.container-secondary {
-  width: 270px;
+.list-description__box {
+  max-width: 270px;
 }
-
-.description .container-secondary dt {
+.list-description__element {
+  display: flex;
+}
+.list-description__element:first-of-type {
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.list-description__icon {
+  background-color: var(--team-bg-color);
+  text-align: center;
+  margin: 25px 0;
+  width: 70px;
+  height: 70px;
+  align-self: center;
+}
+.list-description__header {
+  font-weight: 700;
+  line-height: var(--line-height-small);
   margin-bottom: 10px;
 }
-
-/* --------- Hidden references descr ---- */
-.box-hidden .hidden {
-  height: 100%;
-  width: 100%;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.555;
+.list-description__paragraph {
+  font-size: 14px;
+  line-height: var(--line-height-big);
+  color: var(--nav-second-color);
   letter-spacing: 0.03em;
-  text-align: left;
-  padding: 49px 45px 49px 24px;
-  color: #fff;
-  background-color: rgba(33, 150, 243, 0.9);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.box-hidden {
-  display: block;
-  height: 294px;
-  overflow: hidden;
-}
-
-.references-list .list li:hover .hidden {
-  transform: translatey(-100%);
-}
-
-/* ====== END ======= */
+/* ========== END Section Description ======== */
 /* ==============  Team container ================= */
 .team .container {
   flex-direction: column;
@@ -690,6 +661,32 @@ img {
   justify-content: center;
 }
 
+/* --------- Hidden references descr ---- */
+.box-hidden .hidden {
+  height: 100%;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.555;
+  letter-spacing: 0.03em;
+  text-align: left;
+  padding: 49px 45px 49px 24px;
+  color: #fff;
+  background-color: rgba(33, 150, 243, 0.9);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.box-hidden {
+  display: block;
+  height: 294px;
+  overflow: hidden;
+}
+
+.references-list .list li:hover .hidden {
+  transform: translatey(-100%);
+}
+
+/* ====== END ======= */
 /* ============================ CUSTOMER STYLING ============================ */
 .customers .container {
   flex-direction: column;
@@ -827,6 +824,7 @@ img {
   cursor: pointer;
 }
 
+/* ========================= Section Order ====================== */
 .section-order {
   padding: 200px 0;
   background-color: var(--dark-motive);
@@ -847,4 +845,6 @@ img {
 .section-order__container {
   flex-direction: column;
   text-align: center;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/* ========= END Section Order ========= *//*# sourceMappingURL=main.css.map */
