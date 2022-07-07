@@ -77,7 +77,7 @@ img {
   display: block;
 }
 
-.list-description__second-list, .list-description, .menu__item, .company-adress__list, .short-adress {
+.list-description__second-list, .list-description, .section-about-us__list, .menu__item, .company-adress__list, .short-adress {
   list-style: none;
 }
 
@@ -90,6 +90,12 @@ img {
 
 .section-order, .section-description {
   padding: 94px 0;
+}
+
+.section-about-us__header {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: var(--line-height-small);
 }
 
 /* ====================== Main Container ===================== */
@@ -240,50 +246,6 @@ img {
 }
 
 /* ==================== END SOCIAL Links ======== */
-/* aboout us */
-.about-us h2,
-.team h2,
-.customers h2 {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: var(--line-height-small);
-}
-
-.about-us-list {
-  width: inherit;
-  padding: inherit;
-}
-
-/* team */
-.team figcaption {
-  line-height: var(--line-height-small);
-  color: var(--nav-second-color);
-}
-
-.team strong {
-  font-weight: 500;
-  color: var(--main-txt-color);
-}
-
-.team figcaption a {
-  display: block;
-}
-
-.team .team-list > li {
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
-}
-
-/* References-list*/
-.references-list p {
-  line-height: 1.875;
-  color: var(--nav-second-color);
-}
-
-.references-list strong {
-  line-height: 2;
-  font-size: 18px;
-}
-
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -481,24 +443,24 @@ img {
 }
 
 /* ======= End Header layout ======== */
-/* ============= About us container ======= */
-.about-us .container {
+/* ================== SECTION ABOUT US ===================== */
+.section-about-us {
+  margin-bottom: 94px;
+}
+.section-about-us__container {
   flex-direction: column;
-  align-items: center;
 }
-
-.about-us .container .list {
-  display: flex;
-  margin-top: 50px;
-  justify-content: space-between;
+.section-about-us__list {
   width: inherit;
+  padding: inherit;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
 }
-
-.about-us-list li {
+.section-about-us__element {
   position: relative;
 }
-
-.about-us-list .label {
+.section-about-us__title {
   position: absolute;
   text-transform: uppercase;
   font-size: 14px;
@@ -513,7 +475,6 @@ img {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-/* ====== END ======= */
 /* ========================= Section Description ====================== */
 .list-description {
   display: flex;
@@ -580,6 +541,32 @@ img {
 }
 
 /* ========== Team container END ======= */
+.team h2,
+.customers h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: var(--line-height-small);
+}
+
+/* team */
+.team figcaption {
+  line-height: var(--line-height-small);
+  color: var(--nav-second-color);
+}
+
+.team strong {
+  font-weight: 500;
+  color: var(--main-txt-color);
+}
+
+.team figcaption a {
+  display: block;
+}
+
+.team .team-list > li {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
 /* ============ References ============ */
 .references .container {
   flex-direction: column;
@@ -622,6 +609,17 @@ img {
   border: 1px solid #eeeeee;
   padding: 20px 24px;
   margin-top: -0.3em;
+}
+
+/* References-list*/
+.references-list p {
+  line-height: 1.875;
+  color: var(--nav-second-color);
+}
+
+.references-list strong {
+  line-height: 2;
+  font-size: 18px;
 }
 
 /* ==================== FOoter =============== */

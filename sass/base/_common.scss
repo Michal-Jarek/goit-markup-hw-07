@@ -57,3 +57,16 @@ img {
 %section {
   padding: 94px 0;
 }
+%second-header{
+  font-size: 36px;
+  font-weight: 700;
+  line-height: var(--line-height-small);
+}
+%third-header{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    color: var(--logo-white-color);
+}
