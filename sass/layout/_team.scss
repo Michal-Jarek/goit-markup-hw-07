@@ -1,48 +1,45 @@
-/* ==============  Team container ================= */
-.team .container {
-  flex-direction: column;
-  align-items: center;
+/* =========================  SECTION TEAM ========================== */
+.section-team {
+  @extend %section;
+  background-color: var(--team-bg-color);
+  &__container {
+    flex-direction: column;
+  }
+  &__header {
+    @extend %second-header;
+  }
+  &__list {
+    @extend %lists;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    width: inherit;
+    padding: inherit;
+  }
+  &__element {
+    background-color: var(--logo-white-color);
+    width: 270px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+      0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  }
+  &__img {
+    width: 270px;
+    height: 260px;
+  }
+  &__figcaption {
+    padding: 30px 0 0 0;
+    text-align: center;
+    line-height: var(--line-height-small);
+    color: var(--nav-second-color);
+  }
+  &__name{
+    display: block;
+    font-weight: 500;
+    color: var(--main-txt-color);
+    margin-bottom: 10px;
+  }
+  &__social-list{
+    margin: 16px 32px 18px 32px;
+  }
 }
-.team .container .team-list {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 50px;
-  width: inherit;
-  padding: inherit;
-}
-
-.team .container .list li {
-  background-color: var(--logo-white-color);
-  width: 270px;
-}
-.team .container figcaption {
-  padding: 30px 0 0 0;
-  text-align: center;
-}
-.team .container p {
-  margin-top: 10px;
-}
-/* ========== Team container END ======= */
-.team h2,
-.customers h2 {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: var(--line-height-small);
-}
-
-/* team */
-.team figcaption {
-  line-height: var(--line-height-small);
-  color: var(--nav-second-color);
-}
-.team strong {
-  font-weight: 500;
-  color: var(--main-txt-color);
-}
-.team figcaption a {
-  display: block;
-}
-.team .team-list > li {
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
-    0 1px 2px 0 rgba(0, 0, 0, 0.2);
-}
+/* ================ END SECTION TEAM ============== */
