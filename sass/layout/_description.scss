@@ -1,0 +1,48 @@
+/* ========================= Section Description ====================== */
+.section-description{
+  @extend %section;
+}
+.list-description{
+  @extend %lists;
+  display: flex;
+  width: inherit;
+  justify-content: space-between;
+  &__box{
+    max-width: 270px;
+  }
+  &__second-list{
+    @extend %lists;
+  }
+  &__element{
+    display: flex;
+
+    &:first-of-type{
+      justify-content: center;
+      margin-bottom: 30px;
+      background-color: var(--team-bg-color);
+    }
+
+  }
+  &__icon{
+    text-align: center;
+    margin: 25px 0;
+    width: 70px;
+    height: 70px;
+    align-self: center;
+  }
+  &__header{
+    font-weight: 700;
+    line-height: var(--line-height-small);
+    margin-bottom: 10px;
+
+  }
+  &__paragraph{
+    font-size:14px;
+    line-height: var(--line-height-big);
+    color: var(--nav-second-color);
+    letter-spacing: 0.03em;
+
+  }
+}
+/* ========== END Section Description ======== */
+

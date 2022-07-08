@@ -1,0 +1,12 @@
+/* ================ References Section ================*/
+.section-references {
+  @extend %section;
+  &__container {
+    flex-direction: column;
+  }
+}
+.section-references__buttons-list{
+    margin-bottom: 34px;
+}
+
+

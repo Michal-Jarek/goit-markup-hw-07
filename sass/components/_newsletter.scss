@@ -1,0 +1,55 @@
+/*====================== NEWSLETTER ==============*/
+.newsletter {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  &__label{
+    flex-grow: 1;
+  }
+  &__header{
+    display: block;
+    color: var(--logo-white-color);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  &__email-input{
+    flex-grow: 1;
+    padding: 15px 0 15px 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: transparent;
+    width: calc(100% - 12px);
+    height: 50px;
+    color: rgba(255, 255, 255, 0.3);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, &:focus{
+       outline: none;
+       border: 1px solid var(--main-color);
+       color: rgba(255, 255, 255, 1);
+    }
+  }
+  &__icon{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 13px;
+    right: 28px;
+  }
+  &__button{
+    position: relative;
+    bottom: -36px;
+    height: 50px;
+    text-align: left;
+    padding: 0 0 0 42px;
+  }
+}
+/*====================== END NEWSLETTER ==============*/

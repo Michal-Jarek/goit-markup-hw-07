@@ -1,0 +1,30 @@
+/* ========================= Section Order ====================== */
+.section-order {
+  @extend %section;
+  padding: 200px 0;
+  
+  background-color: var(--dark-motive);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/studio/background.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+ 
+  &__header{
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.364;
+    color: var(--logo-white-color);
+    letter-spacing: 0.06em;
+    margin-bottom: 30px;
+    width: 696px;
+  }
+  &__container{
+    flex-direction: column;
+    text-align: center;
+  }
+}
+/* ========= END Section Order ========= */

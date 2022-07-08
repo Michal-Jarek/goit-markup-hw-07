@@ -1,0 +1,29 @@
+/* ==================== FOoter =============== */
+.page-footer{
+  background-color: var(--dark-motive);
+  &__container{
+  align-items: flex-start;
+  padding: 60px 15px;
+  }
+  &__newsletter{
+     flex-grow: 1;
+    margin: 12px 0 0 78px;
+  }
+}
+.social-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 12px 0 0 70px;
+  &__header{
+    @extend %third-header;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+}
+    
+    
+    
+
+
+

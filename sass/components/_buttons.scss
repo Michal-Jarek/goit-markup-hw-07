@@ -1,0 +1,84 @@
+/* ======================== Buttons styling ============================= */
+
+.buttons {
+  background-color: var(--buttons-first-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.625;
+  letter-spacing: 0.03em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--main-color);
+    color: var(--buttons-first-color);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+      0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    outline: none;
+  }
+}
+.buttons-xl {
+  background-color: var(--main-color);
+  color: var(--logo-white-color);
+  fill: var(--logo-white-color);
+  font-weight: 700;
+  line-height: 1.875;
+  min-width: 200px;
+  border: 0;
+  border-radius: 4px;
+  padding: 10px 41px;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--buttons-first-color);
+    color: var(--main-txt-color);
+    fill: rgba(0, 0, 0, 1);
+  }
+}
+.buttons-list {
+  @extend %lists;
+  display: flex;
+  &__element {
+    &:not(:first-of-type) {
+      margin-left: 8px;
+    }
+  }
+  &__button {
+    padding: 6px 22px;
+    border-radius: 4px;
+    border: 0;
+  }
+}
+
+/* ========================= MODAL BUTTON ================== */
+
+.close-btn {
+  position: absolute;
+  padding: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  right: 8px;
+  top: 8px;
+  cursor: pointer;
+  display: flex;
+  &__icon {
+    fill: black;
+    text-align: center;
+    width: 18px;
+    height: 18px;
+    margin: auto;
+  }
+}
+
+/* ================= END Buttons styling ================ */
