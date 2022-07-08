@@ -79,13 +79,17 @@
     left: 1px;
     top: 2px;
   }
-  &__links {
-    color: var(--main-color);
-    text-decoration: underline;
-    cursor: pointer;
-  }
   &__checkbox:checked + &::before {
     background-image: url(../images/svg-icons/icon_checked.svg);
     background-position: 50% 0%;
+  }
+  &__buttons-xl:hover{
+    background-color: rgba(33, 150, 243, 0.4);
+    color: var(--main-txt-color);
+  }
+    &__links {
+    color: var(--main-color);
+    text-decoration: underline;
+    cursor: pointer;
   }
 }

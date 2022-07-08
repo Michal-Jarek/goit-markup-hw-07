@@ -1,3 +1,4 @@
+/* =================== BACKDROP ==================*/
 .backdrop {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.2);
@@ -16,3 +17,12 @@
   /* visibility: none; */
   pointer-events: none;
 }
+.modal {
+  width: 528px;
+  min-height: 581px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 1);
+  margin: auto;
+  position: relative;
+}
+/* ============ END BACKDROP ==============*/
