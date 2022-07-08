@@ -542,6 +542,7 @@ img {
   font-weight: 700;
   line-height: var(--line-height-small);
   margin-bottom: 10px;
+  font-size: 14px;
 }
 .list-description__paragraph {
   font-size: 14px;
@@ -742,8 +743,8 @@ img {
 }
 .user-policy__checkbox {
   position: absolute;
-  left: 1px;
-  top: 2px;
+  left: 5px;
+  top: 16px;
 }
 .user-policy__checkbox:checked + .user-policy::before {
   background-image: url(../images/svg-icons/icon_checked.svg);

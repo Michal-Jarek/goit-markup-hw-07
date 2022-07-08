@@ -76,8 +76,8 @@
   }
   &__checkbox {
     position: absolute;
-    left: 1px;
-    top: 2px;
+    left: 5px;
+    top: 16px;
   }
   &__checkbox:checked + &::before {
     background-image: url(../images/svg-icons/icon_checked.svg);
