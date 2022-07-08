@@ -3,8 +3,8 @@
   border-bottom: 1px solid #ececec;
   padding: 24px 0;
   background-color: var(--logo-white-color);
-}
-.page-header__container{
-  justify-content: space-between;
+  &__container {
+    justify-content: space-between;
+  }
 }
 /* ======= End Header layout ======== */

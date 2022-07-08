@@ -1,31 +1,12 @@
-/* ================ Portfolio Styling =======*/
-.filter .list,
-.references-list .list {
-  display: flex;
-  justify-content: center;
+/* ================ References Section ================*/
+.section-references {
+  @extend %section;
+  &__container {
+    flex-direction: column;
+  }
+}
+.section-references__buttons-list{
+    margin-bottom: 34px;
 }
 
-/* --------- Hidden references descr ---- */
 
-.box-hidden .hidden {
-  height: 100%;
-  width: 100%;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.555;
-  letter-spacing: 0.03em;
-  text-align: left;
-  padding: 49px 45px 49px 24px;
-  color: #fff;
-  background-color: rgba(33, 150, 243, 0.9);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.box-hidden {
-  display: block;
-  height: 294px;
-  overflow: hidden;
-}
-.references-list .list li:hover .hidden {
-  transform: translatey(-100%);
-}
-/* ====== END ======= */
