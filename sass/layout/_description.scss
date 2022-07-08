@@ -19,11 +19,11 @@
     &:first-of-type{
       justify-content: center;
       margin-bottom: 30px;
+      background-color: var(--team-bg-color);
     }
 
   }
   &__icon{
-    background-color: var(--team-bg-color);
     text-align: center;
     margin: 25px 0;
     width: 70px;

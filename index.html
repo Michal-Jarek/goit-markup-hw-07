@@ -530,60 +530,60 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="buttons" class="close-btn" data-modal-close>
+        <button class="close-btn" type="buttons" data-modal-close>
           <svg>
             <use href="./images/svg-icons/icons.svg#x"></use>
           </svg>
         </button>
         <form class="long-form">
-          <field>
-            <legend>Zostaw swoje dane w formularzu poniżej</legend>
-            <label class="long-form-label">
+          <field class="long-form__field">
+            <legend class="long-form__header">Zostaw swoje dane w formularzu poniżej</legend>
+            <label class="long-form__label">
               Imię
               <input
                 type="text"
                 name="long-form-name"
-                class="long-form-input"
+                class="long-form__input"
               />
-              <svg>
+              <svg class="long-form__icon">
                 <use href="./images/svg-icons/icons.svg#person-black"></use>
               </svg>
             </label>
-            <label class="long-form-label">
+            <label class="long-form__label">
               Telefon
               <input
                 type="tel"
                 name="long-form-phone"
-                class="long-form-input"
+                class="long-form__input"
               />
-              <svg>
+              <svg class="long-form__icon">
                 <use href="./images/svg-icons/icons.svg#phone-black"></use>
               </svg>
             </label>
-            <label class="long-form-label">
+            <label class="long-form__label">
               Email
               <input
                 type="email"
                 name="long-form-email"
-                class="long-form-input"
+                class="long-form__input"
               />
-              <svg>
+              <svg class="long-form__icon">
                 <use href="./images/svg-icons/icons.svg#email-black"></use>
               </svg>
             </label>
-            <label class="long-form-label">
+            <label class="long-form__label">
               Komentarz
               <textarea
                 name="long-form-comment"
-                class="long-form-input"
+                class="long-form__input long-form__input--textarea"
                 rows="10"
                 placeholder="Wprowadź tekst"
               ></textarea>
             </label>
           </field>
-          <label for="user-policy" class="long-form-label-agree">
+          <label for="user-policy" class="long-form__agree">
             <input
-              class="long-form-checkbox visually-hidden"
+              class="long-form__checkbox visually-hidden"
               id="user-policy"
               type="checkbox"
               name="needed-agree"
@@ -591,8 +591,8 @@
               required
             />
             Oświadczam iż akceptuję
-            <a class="form-term-links" href="#">Regulamin</a> i
-            <a class="form-term-links" href="#">Politykę Prywatności.</a>
+            <a class="long-form__links" href="#">Regulamin</a> i
+            <a class="long-form__links" href="#">Politykę Prywatności.</a>
           </label>
           <button class="buttons-xl" type="submit">Wyślij</button>
         </form>

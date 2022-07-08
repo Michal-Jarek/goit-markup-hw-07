@@ -182,7 +182,6 @@ img {
   color: var(--main-txt-color);
 }
 
-/* ================= END Buttons styling ================ */
 /* ========================= MODAL BUTTON ================== */
 .modal {
   width: 528px;
@@ -215,6 +214,7 @@ img {
   margin: auto;
 }
 
+/* ================= END Buttons styling ================ */
 /* ========================== Social Links ================== */
 .social-list {
   display: flex;
@@ -494,9 +494,9 @@ img {
 .list-description__element:first-of-type {
   justify-content: center;
   margin-bottom: 30px;
+  background-color: var(--team-bg-color);
 }
 .list-description__icon {
-  background-color: var(--team-bg-color);
   text-align: center;
   margin: 25px 0;
   width: 70px;
@@ -714,8 +714,7 @@ img {
   align-items: center;
   margin: 40px;
 }
-
-.long-form legend {
+.long-form__header {
   font-size: 20px;
   font-weight: 700;
   line-height: 1.15;
@@ -723,12 +722,7 @@ img {
   text-align: center;
   margin-bottom: 12px;
 }
-
-.long-form textarea {
-  resize: none;
-}
-
-.long-form-label {
+.long-form__label {
   font-size: 12px;
   font-weight: 400;
   line-height: 1.17;
@@ -738,24 +732,38 @@ img {
   color: var(--nav-second-color);
   position: relative;
 }
-
-.long-form-input::placeholder {
-  color: rgba(117, 117, 117, 0.5);
+.long-form__agree {
+  font-size: 14px;
+  line-height: var(--line-height-big);
+  letter-spacing: 0.03em;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
-
-.long-form-input {
+.long-form__agree::before {
+  display: inline-block;
+  content: "";
+  width: 16px;
+  height: 15px;
+  background-image: url(../images/svg-icons/icon_empty.svg);
+  transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.long-form__input {
   width: 448px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding: 11px 12px 11px 42px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.long-form-input:last-child {
+.long-form__input::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+.long-form__input:last-child {
   padding-left: 12px;
 }
-
-.long-form-label svg {
+.long-form__input--textarea {
+  resize: none;
+}
+.long-form__icon {
   position: absolute;
   fill: var(--main-txt-color);
   width: 18px;
@@ -764,49 +772,16 @@ img {
   left: 12px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.long-form-label-agree {
-  font-size: 14px;
-  position: relative;
-  font-weight: 400;
-  line-height: var(--line-height-big);
-  letter-spacing: 0.03em;
-  text-align: left;
-  color: var(--nav-second-color);
-  margin-top: 20px;
-  margin-bottom: 30px;
-}
-
-.long-form-label-agree::before {
-  display: inline-block;
-  content: "";
-  width: 16px;
-  height: 15px;
-  background-image: url(../images/svg-icons/icon_empty.svg);
-  transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.long-form-checkbox {
+.long-form__checkbox {
   position: absolute;
   left: 7.5px;
   top: 16px;
 }
-
-.long-form-checkbox:checked + .long-form-label-agree::before {
+.long-form__checkbox:checked + .long-form__agree::before {
   background-image: url(../images/svg-icons/icon_checked.svg);
   background-position: 50% 0%;
 }
-
-.long-form-label:focus-within svg {
-  fill: var(--main-color);
-}
-
-.long-form-label:focus-within .long-form-input {
-  border-color: var(--main-color);
-  outline: none;
-}
-
-.form-term-links {
+.long-form__links {
   color: var(--main-color);
   text-decoration: underline;
   cursor: pointer;
