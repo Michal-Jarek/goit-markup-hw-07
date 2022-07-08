@@ -732,20 +732,12 @@ img {
   color: var(--nav-second-color);
   position: relative;
 }
-.long-form__agree {
-  font-size: 14px;
-  line-height: var(--line-height-big);
-  letter-spacing: 0.03em;
-  margin-top: 20px;
-  margin-bottom: 30px;
+.long-form__label:focus-within .long-form__icon {
+  fill: var(--main-color);
 }
-.long-form__agree::before {
-  display: inline-block;
-  content: "";
-  width: 16px;
-  height: 15px;
-  background-image: url(../images/svg-icons/icon_empty.svg);
-  transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.long-form__label:focus-within .long-form__input {
+  border-color: var(--main-color);
+  outline: none;
 }
 .long-form__input {
   width: 448px;
@@ -772,19 +764,39 @@ img {
   left: 12px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.long-form__checkbox {
+
+.user-policy {
+  font-size: 14px;
+  position: relative;
+  font-weight: 400;
+  line-height: var(--line-height-big);
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: var(--nav-second-color);
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.user-policy::before {
+  display: inline-block;
+  content: "";
+  width: 16px;
+  height: 15px;
+  background-image: url(../images/svg-icons/icon_empty.svg);
+  transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.user-policy__checkbox {
   position: absolute;
-  left: 7.5px;
-  top: 16px;
+  left: 1px;
+  top: 2px;
 }
-.long-form__checkbox:checked + .long-form__agree::before {
-  background-image: url(../images/svg-icons/icon_checked.svg);
-  background-position: 50% 0%;
-}
-.long-form__links {
+.user-policy__links {
   color: var(--main-color);
   text-decoration: underline;
   cursor: pointer;
+}
+.user-policy__checkbox:checked + .user-policy::before {
+  background-image: url(../images/svg-icons/icon_checked.svg);
+  background-position: 50% 0%;
 }
 
 /* ========================= Section Order ====================== */
